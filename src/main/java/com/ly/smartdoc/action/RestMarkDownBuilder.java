@@ -24,7 +24,6 @@ public class RestMarkDownBuilder extends AnAction {
             CommonConstant.showMessage("build success ,file path :  "
                     + ApiConfig.getInstance().getOutPath());
         } catch (Exception ex) {
-        } catch (Exception ex) {
             CommonConstant.showErrorMessage(ex.getMessage());
         }
     }

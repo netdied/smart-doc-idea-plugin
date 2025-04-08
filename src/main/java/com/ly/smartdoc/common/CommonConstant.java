@@ -34,8 +34,11 @@ public class CommonConstant {
     public static void showErrorMessage(ErrorCoedEnum errorCoedEnum) {
         Messages.showMessageDialog(errorCoedEnum.getMessage(), errorCoedEnum.getCode(), Messages.getErrorIcon());
     }
+<<<<<<< HEAD
 
     public static void showMessage(String content) {
         Messages.showMessageDialog(content, "success", Messages.getInformationIcon());
     }
+=======
+>>>>>>> 164b6e8776a5f658649b474a3b393a72b8c046b1
 }
