@@ -1,0 +1,53 @@
+
+<idea-plugin>
+    <id>com.ly.smartdoc</id>
+    <name>smart-doc-idea</name>
+    <vendor email="lixingzhi@xiaomi.com" url="https://www.yourcompany.com">Mi</vendor>
+    <description>smart-doc-idea-plugin generator postman,html eg.</description>
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <idea-version since-build="222" until-build="232.*"/>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationConfigurable instance="com.ly.smartdoc.config.SettingConfigurable" displayName="Smart-Doc"/>
+        <applicationService serviceImplementation="com.ly.smartdoc.config.SmartDocSettings"/>
+    </extensions>
+
+    <actions>
+        <group
+                id="Plugin.RestActionGroup"
+                text="Generator..."
+                description="Build doc"
+                popup="true">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            <action
+                    id="Plugin.RestHtmlBuilder"
+                    class="com.ly.smartdoc.action.RestHtmlBuilder"
+                    text="Html"
+                    description="Html"/>
+            <action
+                    id="Plugin.RestOpenApiBuilder"
+                    class="com.ly.smartdoc.action.RestOpenApiBuilder"
+                    text="OpenApi"
+                    description="OpenApi"/>
+            <action
+                    id="Plugin.RestPostManBuilder"
+                    class="com.ly.smartdoc.action.RestPostManBuilder"
+                    text="Postman"
+                    description="Postman"/>
+
+            <action
+                    id="Plugin.RestMarkDownBuilder"
+                    class="com.ly.smartdoc.action.RestMarkDownBuilder"
+                    text="MarkDown"
+                    description="MarkDown"/>
+
+            <action
+                    id="Plugin.RestTornanBuilder"
+                    class="com.ly.smartdoc.action.RestTornaBuilder"
+                    text="Torna"
+                    description="Torna"/>
+
+        </group>
+    </actions>
+</idea-plugin>
