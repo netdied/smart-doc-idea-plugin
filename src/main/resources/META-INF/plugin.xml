@@ -42,15 +42,12 @@
                     text="MarkDown"
                     description="MarkDown"/>
 
-<<<<<<< HEAD
             <action
                     id="Plugin.RestTornanBuilder"
                     class="com.ly.smartdoc.action.RestTornaBuilder"
                     text="Torna"
                     description="Torna"/>
 
-=======
->>>>>>> 164b6e8776a5f658649b474a3b393a72b8c046b1
         </group>
     </actions>
 </idea-plugin>

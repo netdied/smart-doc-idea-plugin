@@ -20,12 +20,8 @@ public class RestOpenApiBuilder extends AnAction {
         }
         try {
             OpenApiBuilder.buildOpenApi(apiConfig);
-<<<<<<< HEAD
             CommonConstant.showMessage("build success ,file path :  "
                     + ApiConfig.getInstance().getOutPath());
-        } catch (Exception ex) {
-=======
->>>>>>> 164b6e8776a5f658649b474a3b393a72b8c046b1
         } catch (Exception ex) {
             CommonConstant.showErrorMessage(ex.getMessage());
         }
