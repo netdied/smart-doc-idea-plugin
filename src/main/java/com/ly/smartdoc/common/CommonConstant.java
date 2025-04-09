@@ -10,6 +10,16 @@ import java.util.Objects;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class CommonConstant {
+    public static final String BUILD_HTML = "build html ";
+    public static final String BUILD_TORNA = "build torna ";
+    public static final String BUILD_POSTMAN = "build postman ";
+    public static final String BUILD_OPENAPI = "build openapi ";
+
+    public static final String BUILD_SUCCESS = "smart-doc build success";
+    public static final String BUILD_CANCEL = "Build canceled by user.";
+
+    public static final String ERROR = "error";
+    public static final String SUCCESS = "success";
     private static final AtomicReference<ApiConfig> API_CONFIG = new AtomicReference<>();
 
     public static ApiConfig getApiConfig() {
@@ -28,13 +38,14 @@ public class CommonConstant {
     }
 
     public static void showErrorMessage(String content) {
-        Messages.showMessageDialog(content, "error", Messages.getErrorIcon());
+        Messages.showMessageDialog(content, ERROR, Messages.getErrorIcon());
     }
 
     public static void showErrorMessage(ErrorCoedEnum errorCoedEnum) {
         Messages.showMessageDialog(errorCoedEnum.getMessage(), errorCoedEnum.getCode(), Messages.getErrorIcon());
     }
+
     public static void showMessage(String content) {
-        Messages.showMessageDialog(content, "success", Messages.getInformationIcon());
+        Messages.showMessageDialog(content, SUCCESS, Messages.getInformationIcon());
     }
 }

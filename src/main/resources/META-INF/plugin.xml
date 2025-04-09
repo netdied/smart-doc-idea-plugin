@@ -22,29 +22,29 @@
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
             <action
                     id="Plugin.RestHtmlBuilder"
-                    class="com.ly.smartdoc.action.RestHtmlBuilder"
+                    class="com.ly.smartdoc.action.rest.RestHtmlBuilder"
                     text="Html"
                     description="Html"/>
             <action
                     id="Plugin.RestOpenApiBuilder"
-                    class="com.ly.smartdoc.action.RestOpenApiBuilder"
+                    class="com.ly.smartdoc.action.rest.RestOpenApiBuilder"
                     text="OpenApi"
                     description="OpenApi"/>
             <action
                     id="Plugin.RestPostManBuilder"
-                    class="com.ly.smartdoc.action.RestPostManBuilder"
+                    class="com.ly.smartdoc.action.rest.RestPostManBuilder"
                     text="Postman"
                     description="Postman"/>
 
             <action
                     id="Plugin.RestMarkDownBuilder"
-                    class="com.ly.smartdoc.action.RestMarkDownBuilder"
+                    class="com.ly.smartdoc.action.rest.RestMarkDownBuilder"
                     text="MarkDown"
                     description="MarkDown"/>
 
             <action
                     id="Plugin.RestTornanBuilder"
-                    class="com.ly.smartdoc.action.RestTornaBuilder"
+                    class="com.ly.smartdoc.action.rest.RestTornaBuilder"
                     text="Torna"
                     description="Torna"/>
 
