@@ -6,6 +6,7 @@
     <description>smart-doc-idea-plugin generator postman,html eg.</description>
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.java</depends>
     <idea-version since-build="222" until-build="232.*"/>
 
     <extensions defaultExtensionNs="com.intellij">
@@ -47,6 +48,12 @@
                     class="com.ly.smartdoc.action.rest.RestTornaBuilder"
                     text="Torna"
                     description="Torna"/>
+
+            <action
+                    id="Plugin.ReturnAction"
+                    class="com.ly.smartdoc.action.single.ReturnAction"
+                    text="curl"
+                    description="Curl"/>
 
         </group>
     </actions>

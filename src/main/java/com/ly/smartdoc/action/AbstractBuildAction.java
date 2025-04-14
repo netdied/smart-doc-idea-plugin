@@ -10,6 +10,7 @@ import com.ly.smartdoc.common.CommonConstant;
 import com.ly.smartdoc.common.ErrorCoedEnum;
 import org.jetbrains.annotations.NotNull;
 
+import java.awt.*;
 import java.util.Objects;
 
 public abstract class AbstractBuildAction extends AnAction implements BuildStrategy {

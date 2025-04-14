@@ -17,9 +17,9 @@ dependencies {
 intellij {
     version.set("2022.2.5")
     type.set("IC") // Target IDE Platform
-    updateSinceUntilBuild.set(false)
+    updateSinceUntilBuild.set(true)
     downloadSources.set(true)
-    plugins = ['org.jetbrains.kotlin', 'org.jetbrains.plugins.gradle']
+    plugins = ['org.jetbrains.plugins.gradle','java']
 }
 
 tasks {
