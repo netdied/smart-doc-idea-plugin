@@ -52,7 +52,7 @@
             <action
                     id="Plugin.ReturnAction"
                     class="com.ly.smartdoc.action.single.ReturnAction"
-                    text="curl"
+                    text="ReturnJson"
                     description="Curl"/>
 
         </group>
