@@ -43,7 +43,7 @@ public abstract class AbstractBuildAction extends AnAction {
 
             @Override
             public void onSuccess() {
-                CommonConstant.showMessage(CommonConstant.BUILD_SUCCESS);
+//                nothing
             }
 
             @Override
