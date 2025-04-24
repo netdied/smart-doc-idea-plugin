@@ -13,7 +13,7 @@ import org.jetbrains.annotations.NotNull;
 import java.awt.*;
 import java.util.Objects;
 
-public abstract class AbstractBuildAction extends AnAction implements BuildStrategy {
+public abstract class AbstractBuildAction extends AnAction {
 
     @Override
     public void actionPerformed(AnActionEvent e) {
@@ -54,4 +54,8 @@ public abstract class AbstractBuildAction extends AnAction implements BuildStrat
     }
 
     protected abstract String getTaskTitle();
+
+    protected abstract void execute(ApiConfig apiConfig);
+
+
 }
